@@ -1,0 +1,10 @@
+var guests = ["Kamran Tessori", "Zia Khan", "Danial Nagori"];
+// let guestNotComing = guests.filter((guest) => guest === "Danial Nagori");
+// guests = guests.map((element) => (element === "Danial Nagori" ? "Hamza Syed" : element));
+guests.unshift("Okasha Tanoli");
+guests.splice(2, 0, "Imran Ahmed");
+guests.push("Jameel Ahsan");
+var invitation = "You are cordially invited at the dinner party\nto be held at Sheraton Hotel, Karachi on 12-Nov-2023 @ 9:00 PM";
+guests.forEach(function (guest) { return console.log("Dear Mr.".concat(guest, ", ").concat(invitation, "\n")); });
+console.log("\n------------- IMPORTANT ANNOUNCEMENT -------------\n");
+console.log("Please note that we have booked a larger table in anticipation that \nour valued guests will show maximum turnaround on this auspicious gathering.\n\nWe therefore request you to grace this occasion by attending this dinner party & oblige.\n\nThanks\nPIAIC Administration\n\n");
